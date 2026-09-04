@@ -1,0 +1,11 @@
+{
+  "version": "9.4.0",
+  "release_date": "20/08/2026",
+  "required_manual_update": false,
+  "min": "9.2.0",
+  "migrations": [
+  ],
+  "url": "https://spondonit.com/contact",
+  "notes": "This is a mostly bug fixing update."
+}
+

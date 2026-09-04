@@ -1,0 +1,44 @@
+<?php
+
+namespace Database\Seeders\Academics;
+
+use App\Models\SmClassSection;
+use App\Models\SmStaff;
+use App\Models\SmSubject;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class SmAssignSubjectsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run($school_id, $academic_id): void
+    {
+        $teacher = SmStaff::where('role_id', 4)->where('school_id', $school_id)->pluck('id')->unique();
+        if ($teacher) {
+            $data = SmClassSection::where('school_id', $school_id)->where('academic_id', $academic_id)->get();
+            $subject_id = SmSubject::where('school_id', $school_id)->where('academic_id', $academic_id)->pluck('id')->unique();
+            foreach ($data as $datum) {
+                $class_id = $datum->class_id;
+                $section_id = $datum->section_id;
+                foreach ($subject_id as $subject) {
+                    foreach ($teacher as $tea) {
+                        DB::table('sm_assign_subjects')->insert([
+                            [
+                                'class_id' => $class_id,
+                                'section_id' => $section_id,
+                                'teacher_id' => $tea,
+                                'subject_id' => $subject,
+                                'created_at' => date('Y-m-d h:i:s'),
+                                'school_id' => $school_id,
+                                'academic_id' => $academic_id,
+                            ],
+                        ]);
+                    }
+
+                }
+            }
+        }
+    }
+}

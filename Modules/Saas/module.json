@@ -1,0 +1,13 @@
+{
+    "name": "Saas",
+    "alias": "saas",
+    "description": "SaaS subscription management module",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Saas\\Providers\\SaasServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

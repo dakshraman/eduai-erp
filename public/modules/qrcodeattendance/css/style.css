@@ -1,0 +1,227 @@
+
+.gap-24 {
+    gap: 24px;
+}
+
+.qr_code_box {
+    border: 1px solid #EAE7F0;
+    padding: 22px;
+    text-align: center;
+}
+
+.qr_code_box:not(:last-child) {
+    border-bottom: 0;
+}
+
+h2.qr_code_box_title {
+    font-size: 32px;
+    font-weight: 600;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.id_demo_image img {
+    max-width: 100%;
+    width: 360px;
+    aspect-ratio: 360/230;
+    object-fit: cover;
+}
+
+.qr_code_scanner {
+    border: 2px solid #862CFF;
+    padding: 22px;
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+.qr_code_scanner_info {
+    margin-top: 30px;
+}
+
+.scanner_inner {
+    max-height: 230px;
+    max-width: 100%;
+    z-index: 2;
+    position: relative;
+    background: #F2F0F6;
+    aspect-ratio: 400/230;
+}
+
+.qr_code_scanner::before {
+    content: '';
+    height: calc(100% - 130px);
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    background: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.qr_code_scanner::after {
+    content: '';
+    width: calc(100% - 130px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4px;
+    bottom: -4px;
+    background: white;
+}
+
+.qr_code_scanner_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.id_card_preview {
+    background: #F7F7F7;
+    text-align: left;
+    padding-top: 30px;
+    width: 300px;
+    border: 1px solid #EAE7F0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+img.user_image {
+    display: block;
+    margin: 0 auto;
+    height: 120px;
+    width: 120px;
+    aspect-ratio: 1/1;
+    min-height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.id_card_preview .info p {
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.info_top_separator {
+    border-top: 1px solid #AA93B6;
+}
+
+.qr_attendence_success_img {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+}
+
+.add_attendence h5 {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.add_attendence label {
+    font-size: 16px;
+}
+
+.id_card_preview::before {
+    content: '';
+    height: 300px;
+    width: 190px;
+    background: #A37EFF;
+    position: absolute;
+    left: -64px;
+    top: -180px;
+    transform: rotate(65deg);
+    z-index: 1;
+}
+
+.id_card_preview::after {
+    content: '';
+    height: 400px;
+    width: 190px;
+    background: #B190FF;
+    position: absolute;
+    left: -30px;
+    top: -180px;
+    transform: rotate(55deg);
+}
+
+img.user_image {
+    z-index: 10;
+    position: relative;
+}
+.attendance-success-alert{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.qr_code_success_title{
+    font-weight: 600;
+    color: #000000;
+    font-size: 22px;
+}
+.id_card_preview .info {
+    z-index: 3
+}
+video{
+    height: 230px;
+}
+
+@media(max-width: 767px) {
+    h2.qr_code_box_title {
+        font-size: 22px;
+    }
+
+    .qr_code_scanner_title {
+        font-size: 14px;
+    }
+
+    .id_card_preview {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+.full-screen-btn {
+    border: unset;
+    padding: 8px 12px;
+    background: transparent;
+}
+
+.up_st_admin_visitor:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background: #FFF;
+    overflow-y: scroll;
+} 
+.late{
+    margin-left: -23px;
+}
+
+
+.input-right-icon {
+    position: initial;
+    z-index: unset;
+}
+.has-padding {
+    padding: 11px 0px;
+    text-align: center;
+}
+.class-strong {
+    display: block;
+    margin-top: 10px;
+}
+
+.radio-ng-margin{
+    margin-left: -16px;
+}
+.button-margin {
+    margin-top: 37px;
+}

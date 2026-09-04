@@ -1,0 +1,41 @@
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+            background: {
+                    {
+                    @activeStyle()->primary_color2
+                }
+            }
+
+             !important;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+            background: {
+                    {
+                    @activeStyle()->primary_color2
+                }
+            }
+
+             !important;
+        }
+
+        ::placeholder {
+            color: {
+                    {
+                    @activeStyle()->primary_color
+                }
+            }
+
+             !important;
+        }
+
+        .datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom {
+            z-index: 99999999999 !important;
+            background: #fff !important;
+        }
+
+        .primary_input {
+            float: left;
+            width: 100%;
+        }

@@ -1,0 +1,1248 @@
+/* line 2, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+.exam_notify_btn {
+    background: #D7598F;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /* line 13, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .exam_btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: #8555F9;
+    display: inline-flex;
+    text-transform: uppercase;
+    align-items: center;
+    height: 36px;
+    border: 0;
+    background: #EED6FA;
+  }
+  
+  /* line 27, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper {
+    border-radius: 5px;
+    padding: 30px 40px 25px 40px;
+    background: linear-gradient(91.88deg, var(--base_color) -0.04%, #283367 100.11%);
+  }
+  
+  /* line 31, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 31, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .shorAnser_exam_wrapper .shorAnser_exam_header {
+      flex-direction: column;
+    }
+  }
+  
+  /* line 38, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_header .shorAnser_exam_left h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  /* line 44, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_header .shorAnser_exam_left p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  /* line 51, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_header .shorAnser_exam_right {
+    max-width: 380px;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 51, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .shorAnser_exam_wrapper .shorAnser_exam_header .shorAnser_exam_right {
+      margin-top: 20px;
+    }
+  }
+  
+  /* line 56, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_header .shorAnser_exam_right h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  /* line 64, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .quote {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 13px 15px;
+    margin: 15px 0 20px 0;
+  }
+  
+  /* line 72, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .quote p {
+    color: #fff;
+  }
+  
+  /* line 77, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .exam_count p {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  /* line 82, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .exam_count p span {
+    color: #B6BBD0;
+  }
+  
+  /* line 87, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .exam_count_lists {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* line 91, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .exam_count_lists li {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    flex: 34px 0 0;
+    line-height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    filter: drop-shadow(0px 5px 10px rgba(108, 39, 255, 0.25));
+    margin-bottom: 5px;
+  }
+  
+  /* line 103, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .exam_count_lists li:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  /* line 106, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .shorAnser_exam_wrapper .shorAnser_exam_body .exam_count_lists li.active {
+    border: 0;
+    background: linear-gradient(90deg, #7E32FF 0%, #C337DA 100%);
+  }
+  
+  /* line 115, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .short_anwer_box {
+    background: #F7EAFC;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  /* line 119, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .short_anwer_box h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--base_color);
+  }
+  
+  /* line 126, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .gradient_text_box {
+    border-radius: 5px;
+    background: linear-gradient(90deg, #915EFF 0.47%, #C874E6 100%);
+    padding: 15px 15px 11px 15px;
+  }
+  
+  /* line 133, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .gradient_text_area {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: var(--base_color);
+    font-size: 16px;
+    font-weight: 500;
+    height: 282px;
+    width: 100%;
+  }
+  
+  /* line 142, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .gradient_text_area::placeholder {
+    font-weight: 500;
+    color: #707DB7;
+  }
+  
+  /* line 148, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .gradient_input {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%);
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    color: var(--base_color);
+    font-size: 16px;
+    font-weight: 400;
+    height: 56px;
+  }
+  
+  /* line 157, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .gradient_input::placeholder {
+    font-weight: 400;
+    color: #707DB7;
+  }
+  
+  /* line 162, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .exam_label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--base_color);
+    margin-bottom: 12px;
+  }
+  
+  /* line 168, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .p-15 {
+    padding: 15px !important;
+  }
+  
+  /* line 174, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    grid-row: 150px;
+  }
+  
+  @media (max-width: 767.98px) {
+    /* line 174, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .match_wrapper .single_match {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* line 182, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  /* line 185, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_question {
+    border-radius: 5px;
+    background: linear-gradient(90deg, #915EFF 0.47%, #C874E6 100%);
+  }
+  
+  /* line 188, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_question .match_question_inner {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%);
+    border-radius: 5px;
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* line 195, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_question .match_question_inner p {
+    font-size: 20px;
+    color: var(--base_color);
+    font-weight: 500;
+  }
+  
+  /* line 202, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_answer {
+    background: linear-gradient(90deg, #7E32FF 0%, #C337DA 100%);
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  /* line 207, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_answer .match_answer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media (max-width: 575.98px) {
+    /* line 207, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .match_wrapper .single_match .single_match_answer .match_answer_inner {
+      flex-direction: column;
+    }
+  }
+  
+  /* line 214, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_answer .match_answer_inner .thumb {
+    width: 120px;
+    height: 120px;
+    flex: 120px 0 0;
+  }
+  
+  @media (max-width: 575.98px) {
+    /* line 214, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .match_wrapper .single_match .single_match_answer .match_answer_inner .thumb {
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* line 221, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_answer .match_answer_inner .thumb img {
+    width: 100%;
+  }
+  
+  /* line 225, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .match_wrapper .single_match .single_match_answer .match_answer_inner .nice_Select3 {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%);
+    border-radius: 5px;
+    color: #8555F9;
+    width: 162px;
+    padding-left: 15px;
+  }
+  
+  /* line 238, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 86px;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 238, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .true_false_wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* line 246, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper .single_true_false {
+    background: linear-gradient(90deg, #915EFF 0.47%, #C874E6 100%);
+    border-radius: 5px;
+    padding: 15px 25px 15px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* line 254, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper .single_true_false .true_false_text {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 13px 22px;
+  }
+  
+  /* line 259, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper .single_true_false .true_false_text span {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  /* line 264, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper .single_true_false .check_img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* line 268, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper .single_true_false.active {
+    background: linear-gradient(90deg, #7E32FF 0%, #C337DA 100%);
+  }
+  
+  /* line 270, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper .single_true_false.active .check_img {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* line 278, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .mcq_wrapper {
+    grid-template-rows: 110px;
+  }
+  
+  /* line 280, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .mcq_wrapper.img_wrapper {
+    grid-template-rows: 140px;
+  }
+  
+  /* line 282, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .mcq_wrapper.img_wrapper .thumb {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* line 288, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .mcq_wrapper.img_wrapper .thumb img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* line 295, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .mcq_wrapper .single_true_false .true_false_text {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    padding: 0;
+    flex: 80px 0 0;
+  }
+  
+  /* line 303, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .mcq_wrapper .single_true_false p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 303, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .mcq_wrapper .single_true_false p {
+      font-size: 15px;
+    }
+  }
+  
+  /* line 317, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper.only_img_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-template-rows: auto;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 317, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .true_false_wrapper.only_img_wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* line 324, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper.only_img_wrapper .single_true_false {
+    padding: 10px;
+    position: relative;
+  }
+  
+  /* line 328, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper.only_img_wrapper .single_true_false .thumb img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* line 333, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper.only_img_wrapper .single_true_false .check_img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    z-index: 11;
+    background: linear-gradient(90deg, rgba(126, 50, 255, 0.7) 0%, rgba(195, 55, 218, 0.7) 100%);
+  }
+  
+  /* line 345, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper.only_img_wrapper .single_true_false .check_img img {
+    max-width: 50px;
+  }
+  
+  /* line 349, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper.only_img_wrapper .single_true_false .expand_icon {
+    width: 41px;
+    height: 41px;
+    background: var(--base_color);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 41px;
+    flex: 41px 0 0;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+  }
+  
+  /* line 363, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .true_false_wrapper.only_img_wrapper .single_true_false .expand_icon i {
+    color: #fff;
+  }
+  
+  /* line 369, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .img_banner {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  
+  /* line 372, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .img_banner img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* line 379, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script {
+    border: 1px solid #D8DDF0;
+    border-radius: 5px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 379, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .single_answer_script {
+      padding: 15px;
+    }
+  }
+  
+  /* line 388, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script.wrong_anser_script {
+    background: linear-gradient(90.87deg, #E0EBFE 0%, #EFDDF6 100%);
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 379, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .single_answer_script {
+      flex-wrap: wrap-reverse;
+    }
+  }
+  
+  /* line 396, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script .answer_script_left {
+    max-width: 94%;
+    width: 100%;
+  }
+  
+  /* line 399, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script .answer_script_left h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--base_color);
+    margin-bottom: 11px;
+  }
+  
+  /* line 405, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script .answer_script_left .green_text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0DB809;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* line 414, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script .answer_script_right h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--base_color);
+    margin-bottom: 22px;
+  }
+  
+  /* line 420, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script .answer_script_right .mark_icon {
+    margin-bottom: 30px;
+  }
+  
+  /* line 422, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .single_answer_script .answer_script_right .mark_icon img {
+    max-width: 50px;
+  }
+  
+  /* line 428, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .ans_thumb {
+    max-width: 278px;
+  }
+  
+  /* line 430, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .ans_thumb img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* line 435, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 435, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .answershit_wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* line 442, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit_inner.marked_border {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* line 445, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit_inner.marked_border::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    border: 15px solid #66FF63;
+    z-index: -1;
+    border-radius: 5px;
+  }
+  
+  /* line 457, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit {
+    border-radius: 5px;
+    padding: 6px;
+    display: flex;
+    background: linear-gradient(90deg, #915EFF 0.47%, #C874E6 100%);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (max-width: 575.98px) {
+    /* line 457, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .answershit_wrapper .single_answershit {
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* line 469, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit .thumb_upper {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* line 473, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit .thumb_upper .thumb {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    flex: 70px 0 0;
+  }
+  
+  @media (max-width: 575.98px) {
+    /* line 473, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .answershit_wrapper .single_answershit .thumb_upper .thumb {
+      margin-right: 10px;
+    }
+  }
+  
+  /* line 481, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit .thumb_upper .thumb img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* line 486, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit .thumb_upper p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  /* line 492, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit .correct_check {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 575.98px) {
+    /* line 492, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .answershit_wrapper .single_answershit .correct_check {
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  /* line 499, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper .single_answershit .correct_check img {
+    max-width: 29px;
+  }
+  
+  /* line 505, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 505, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+    .answershit_wrapper2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  /* line 512, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 .single_answershit_inner.marked_border {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* line 516, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 .single_answershit {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    background: linear-gradient(90deg, #915EFF 0.47%, #C874E6 100%);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* line 525, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 .single_answershit.marked_border {
+    background: #66FF63;
+  }
+  
+  /* line 528, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 .single_answershit .correct_check {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    z-index: 11;
+    background: linear-gradient(90deg, rgba(126, 50, 255, 0.7) 0%, rgba(195, 55, 218, 0.7) 100%);
+  }
+  
+  /* line 541, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 .single_answershit .thumb {
+    width: 100%;
+  }
+  
+  /* line 543, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 .single_answershit .thumb img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* line 549, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answershit_wrapper2 .single_answershit .correct_check img {
+    max-width: 29px;
+  }
+  
+  /* line 557, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answer_list li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--base_color);
+  }
+  
+  /* line 561, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answer_list li:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  
+  /* line 564, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answer_list li.correct {
+    font-weight: 700;
+    color: #707DB7;
+  }
+  
+  /* line 568, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answer_list li span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* line 572, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_exam.scss */
+  .answer_list li img {
+    margin-left: 10px;
+    position: relative;
+    bottom: 3px;
+  }
+  
+  /* new css */
+
+  .question_setup {
+    background: #384685;
+    border-radius: 5px;
+    padding: 20px;
+}
+.question_setup_input .nice-select{
+    border: 2px solid #B66CED !important;
+    border-radius: 5px;
+    padding-left: 15px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%) !important;
+}
+
+.primary-input::placeholder {
+  top: 0 !important;
+}
+
+.primary-input.question_text_input {
+    border: 2px solid #B66CED !important;
+    border-radius: 5px;
+    padding-left: 15px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%) !important;
+    padding: 10px 15px;
+}
+.primary-input.question_text_input:focus{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%) !important;
+}
+/* .gradient_text_box .note-editor {
+    background: linear-gradient(
+    180deg
+    , #FFFFFF 0%, #F0EAFF 100%);
+} */
+.nice-select:after {
+        content: "\f0d7";
+        font-family: 'FontAwesome';
+    }
+.true_false_question_setup {
+background: linear-gradient(90deg, #915EFF 0.47%, #C874E6 100%);
+    border-radius: 5px;
+    padding: 20px;
+}
+.mcq_question_setup {
+background: linear-gradient(90deg, #915EFF 0.47%, #C874E6 100%);
+    border-radius: 5px;
+    padding: 20px;
+}
+#type_name_show{
+    margin-left: 10px;
+}
+/* .multiple-options {
+  background: linear-gradient( 
+90deg
+, #915EFF 0.47%, #C874E6 100%);
+  border-radius: 5px;
+} */
+.nice-select .current {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.nice-select .list li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multiple-images ::-webkit-file-upload-button {
+  background: #8432FA;
+  color: white;
+  border: #8432FA;
+  }
+  .option_image {
+      border-radius: 5px;
+      padding: 5px;
+      display: flex;
+      background: linear-gradient(
+  90deg
+  , #915EFF 0.47%, #C874E6 100%);
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+  }
+.primary_checkbox {
+display: inline-block;
+position: relative;
+height: 18px;
+margin: 0;
+flex: 18px 0 0;
+line-height: 18px;
+}
+
+.primary_checkbox.white_checkbox .checkmark:after {
+border-color: #fff;
+}
+
+.primary_checkbox .checkmark {
+position: relative;
+width: 18px;
+height: 18px;
+top: 0;
+left: 0;
+display: block;
+cursor: pointer;
+line-height: 18px;
+flex: 18px 0 0;
+border-radius: 50%;
+}
+
+/* line 31, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_predefine.scss */
+.primary_checkbox input {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+visibility: hidden;
+}
+
+/* line 40, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_predefine.scss */
+.primary_checkbox input:checked ~ .checkmark:after {
+width: 100%;
+height: 100%;
+border: 0;
+transition: .3s;
+transform: scale(0);
+}
+
+/* line 49, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_predefine.scss */
+.primary_checkbox input:checked ~ .checkmark {
+background: linear-gradient(90deg, #7C32FF 0.47%, #C738D8 100%);
+box-shadow: 0px 5px 10px rgba(108, 39, 255, 0.25);
+transition: .3s;
+}
+
+/* line 57, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_predefine.scss */
+.primary_checkbox input:checked ~ .checkmark::before {
+content: "\e64c";
+font-family: "themify";
+position: absolute;
+display: block;
+top: 0px;
+left: 3px;
+text-indent: 1px;
+color: #828BB2;
+background-color: transparent;
+border: 0px;
+-webkit-transform: rotate(8deg);
+-moz-transform: rotate(8deg);
+-ms-transform: rotate(8deg);
+-o-transform: rotate(8deg);
+transform: rotate(8deg);
+font-size: 10px;
+font-weight: 600;
+line-height: 18px;
+z-index: 99;
+color: #fff;
+transition: .3s;
+}
+
+/* line 81, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_predefine.scss */
+.primary_checkbox .checkmark:after {
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+content: "";
+width: 18px;
+height: 18px;
+background: transparent;
+border-radius: 50px;
+border: 1px solid #828BB2;
+transition: .3s;
+transform: scale(1);
+}
+.gradient_input:focus-visible {
+  outline: #9A62FC auto 1px;
+  outline-color: #9A62FC;
+}
+.marking_input:focus-visible {
+  outline: #9A62FC auto 1px;
+  outline-color: #9A62FC;
+}
+.show_question_type{
+  color:#9A62FC;
+}
+.date_time_show{
+  padding-top: 10px;
+}
+
+#selectStaffsDiv,
+.forStudentWrapper {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: linear-gradient(90deg, #7c32ff 0%, #c738d8 51%, #7c32ff 100%);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px linear-gradient(90deg, #7c32ff 0%, #c738d8 51%, #7c32ff 100%);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* th,td{
+    font-size: 9px !important;
+    padding: 5px !important
+
+} */
+.mcq_switch{
+padding-left: 90px;  
+padding-top: 55px;
+}
+.option_create_btn{
+  margin-left: 65px;;
+}
+.note-popover.popover.in.note-image-popover.bottom{
+  display: none;
+}
+.note-popover.popover.in.note-table-popover.bottom{
+  display: none;
+}
+.note-popover.popover.in.note-link-popover.bottom{
+  display: none;
+}
+
+.dd-list {
+  list-style-type: none;
+  gap: 10px;
+}
+
+
+.dd {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  list-style: none;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.dd-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+
+.dd-handle {
+  display: block;
+  margin: 0px;
+  text-decoration: none;
+  border: 1px solid #ebebeb;
+  background: rgba(0, 0, 0, .03);
+  -webkit-border-radius: 3px;
+  border-radius: 0px;
+  / background: #F5F7FB;/ padding: 2px 10px;
+  border: 0;
+  line-height: 46px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--base_color);
+  padding-left: 30px;
+  cursor: grab;
+
+}
+
+
+.dd-handle .menu_icon {
+  float: left;
+  padding: 0px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #F5F7FB;
+  box-sizing: border-box;
+  border-radius: 23px 0px 0px 23px;
+  color: var(--base_color);
+  background: #fff;
+  margin-right: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.edit_icon {
+  float: right;
+  cursor: pointer;
+  font-size: 16px;
+  color: #707DB7;
+  font-weight: 400;
+  padding-right: 20px;
+  line-height: 46px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.dd-placeholder,
+.dd-empty {
+  margin: 5px 0;
+  padding: 0;
+  background: #f2fbff;
+  border: 1px dashed var(--base_color);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.dd-empty {
+  border: 1px dashed var(--base_color);
+  background-color: #e5e5e5;
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+
+.dd-dragel {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+
+.dd-dragel>.dd-item .dd-handle {
+  margin-top: 0;
+}
+
+
+.dd-dragel .dd-handle {
+  -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**
+          * Nestable Extras
+          */
+
+.nestable-lists {
+  display: block;
+  clear: both;
+  padding: 30px 0;
+  width: 100%;
+  border: 0;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+@media only screen and (min-width: 700px) {
+
+  .dd+.dd {
+      margin-left: 2%;
+  }
+}
+
+
+.dd-hover>.dd-handle {
+  background: #2ea8e5 !important;
+}
+
+
+/* new css  */
+.match_wrapper .single_match .single_match_answer,
+.dd-item .single_match .single_match_answer {
+  background: linear-gradient(
+90deg
+, #7E32FF 0%, #C337DA 100%);
+  border-radius: 5px;
+  padding: 15px;
+  justify-content: center;
+}
+.dd-item .single_match .single_match_answer img{
+  width: 120px !important;
+}
+.dd-item .single_match .single_match_answer .match_answer_inner{
+  justify-content: center !important;
+}
+/* .match_wrapper .single_match .single_match_answer .match_answer_inner {
+  justify-content: center;
+} */
+
+.loader2 {
+  z-index: 10000;
+  position: relative;
+  margin: 0;
+  margin-top: 0px;
+  right: 11px;
+  top: -4px;
+}
+
+.mr-11{
+  margin: -11px;
+}

@@ -1,0 +1,115 @@
+@extends('backEnd.master')
+@section('title') 
+@lang('student.subject_wise_attendance_import')
+@endsection
+
+@section('mainContent')
+    <section class="sms-breadcrumb mb-20 up_breadcrumb">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <h1>@lang('student.subject_wise_attendance_import')</h1>
+                <div class="bc-pages">
+                    <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
+                    <a href="#">@lang('student.subject_wise_attendance')</a>
+                    <a href="#">@lang('student.subject_wise_attendance_import')</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="admin-visitor-area up_st_admin_visitor">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="main-title">
+                        <h3>@lang('common.select_criteria')</h3>
+                    </div>
+                </div>
+
+                <div class="offset-lg-3 col-lg-3 text-right mb-20">
+                    <a download="" href="{{url('/public/backEnd/bulkxl/subject_wise_student_attendance.xlsx')}}">
+                        <button class="primary-btn tr-bg text-uppercase bord-rad">
+                            @lang('student.download_sample_file')
+                            <span class="pl ti-download"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {{ html()->form('POST', route('subject-wise-attendance-bulk-store'))->attributes([
+                'class' => 'form-horizontal',
+                'files' => true,
+                'enctype' => 'multipart/form-data',
+                'id' => 'student_form',
+            ])->open() }}
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                    <div class="white-box">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="main-title">
+                                        <div class="box-body">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <input type="hidden" name="url" id="url" value="{{URL::to('/')}}">
+
+                            <div class="row  mt-30">
+                                @include('backEnd.common.search_criteria', [
+                                    'div' => 'col-lg-6',
+                                    'mt' => 'mt-15',
+                                    'required' => ['class', 'section','subject'],
+                                    'visiable' => ['class', 'section','subject'],
+                                    'class_name' => 'class',
+                                    'section_name' => 'section',
+                                    'subject' => true,
+                                    'selected' => [
+                                        'shift_id' => @$shift_id,
+                                        'class_id' => @$class_id,
+                                        'section_id' => @$section_id,
+                                    ],
+                                ])
+
+                                <div class="col-lg-6 mt-15">
+                                    <div class="primary_input">
+                                        <label for="primary_input_label">@lang('student.excel_file') (xlsx, csv) <span class="text-danger"> *</span></label>
+                                        <div class="primary_file_uploader">
+                                           
+                                            <input class="primary_input_field form-control{{ $errors->has('file') ? ' is-invalid' : '' }}"
+                                                       type="text" id="placeholderInput" name="file"
+                                                       placeholder="@lang('student.excel_file') (xlsx, csv) *">
+                                            <button class="" type="button">
+                                                <label class="primary-btn small fix-gr-bg" for="browseFile">{{ __('common.browse') }}</label>
+                                                <input type="file" class="d-none" name="file" id="browseFile">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('file'))
+                                        <span class="text-danger invalid-select" role="alert">
+                                            {{ $errors->first('file') }}
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>                                                                                          
+                            <div class="row mt-40">
+                                <div class="col-lg-12 text-center">
+                                    <button class="primary-btn fix-gr-bg">
+                                        <span class="ti-check"></span>
+                                        @lang('student.import_attendance')
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ html()->form()->close() }}
+        </div>
+    </section>
+@endsection
+@include('backEnd.partials.date_picker_css_js')

@@ -1,0 +1,14 @@
+.link-btn {
+    padding: 13px;
+    border: 1px solid #f1f1f1;
+    color: unset;
+    margin: 5px;
+}
+
+.link-btn-active, .link-btn-active:hover{
+    background: var(--primary-color) !important;
+    color: #FFF;
+}
+.mt-level {
+    margin-top: 28px;
+}

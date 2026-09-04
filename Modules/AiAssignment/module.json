@@ -1,0 +1,13 @@
+{
+    "name": "AiAssignment",
+    "alias": "aiassignment",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AiAssignment\\Providers\\AiAssignmentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

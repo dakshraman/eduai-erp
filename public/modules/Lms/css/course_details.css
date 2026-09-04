@@ -1,0 +1,114 @@
+button#show_chapter_section {
+  color: white;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    var(--gradient_1) 0%,
+    #a235ec 70%,
+    #c738d8 100%
+  );
+}
+
+button#show_lesson_section {
+  color: white;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    var(--gradient_1) 0%,
+    #a235ec 70%,
+    #c738d8 100%
+  );
+}
+
+button#show_lesson_section_inside {
+  color: white;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    var(--gradient_1) 0%,
+    #a235ec 70%,
+    #c738d8 100%
+  );
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: var(--primary-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px
+    linear-gradient(90deg, var(--gradient_1) 0%, #c738d8 51%, var(--gradient_1) 100%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch_label {
+  padding-left: 5px !important;
+}
+/* new  */
+.erp_role_permission_area .single_permission .permission_header label {
+  margin: 0;
+}
+.add-item-forms--inline-menu--1OTdc {
+  grid-gap: 20px;
+}
+.lms_option_box button {
+  white-space: nowrap;
+}
+.add-item-forms--inline-menu--1OTdc {
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .add-item-forms--inline-menu--1OTdc {
+    grid-gap: 10px;
+  }
+}

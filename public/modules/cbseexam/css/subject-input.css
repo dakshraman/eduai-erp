@@ -1,0 +1,30 @@
+/* Hide default date and time picker icons - Chrome, Safari, Edge */
+    input[type="date"]::-webkit-calendar-picker-indicator,
+    input[type="time"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    /* Remove spinner controls - Chrome, Safari, Edge */
+    input[type="time"]::-webkit-inner-spin-button,
+    input[type="time"]::-webkit-clear-button,
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-clear-button {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    /* Firefox */
+    input[type="date"],
+    input[type="time"] {
+        -moz-appearance: textfield;
+    }
+
+    /* bringing date picker on top */
+    .ui-datepicker {
+        z-index: 9999999999 !important;
+    }
+
+    #appand_subejcts td {
+        vertical-align: middle;
+    }

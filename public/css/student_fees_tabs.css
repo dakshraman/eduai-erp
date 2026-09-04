@@ -1,0 +1,60 @@
+
+.fees-tab {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.fees-tab .fees-tab-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0px 10px 9px;
+}
+
+.fees-tab .fees-tab-header .fees-title {
+    width: 98%;
+}
+
+.fees-tab .fees-tab-header .collaps-btn {
+    width: 2%;
+}
+.fees-tab .fees-tab-header .collaps-btn a{
+    display: block;
+    background: var(--primary-color) !important;
+    color:  var(--text_white) !important;;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fees-tab-body{
+    width: 100%;
+    padding: 10px;
+}
+
+ .ti-calendar:before {
+    position: relative !important;
+    top: 5px !important;
+}
+
+.school-table-style tr th {
+    padding: 10px 18px 10px 10px !important;
+}
+
+.school-table-style tr td {
+    padding: 20px 10px 20px 10px !important;
+}
+
+.school-table-style tfoot tr td {
+    padding: 10px 10px 10px 10px !important;
+}
+
+html[dir="rtl"] #main-content {
+    overflow: initial !important;
+}
+.btn-date label{
+    display: inline-block;
+    margin-bottom: 24px;
+}

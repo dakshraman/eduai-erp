@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('./pinyonscript-regular-webfont.woff2') format('woff2'),
+         url('./pinyonscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Apply the font to Summernote */
+.edu_summernote {
+    font-family: 'Pinyon Script', sans-serif; /* Fallback to sans-serif if the font is not available */
+  }

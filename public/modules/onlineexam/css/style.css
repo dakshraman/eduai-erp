@@ -1,0 +1,128 @@
+.green-bg {
+    background: green;
+}
+
+.blue-bg {
+    background: blue
+}
+
+.my_cal {
+    display: block;
+}
+
+.cursor-none {
+    cursor: none;
+}
+
+.rippter-size {
+    width: 56.8125px;
+    height: 56.8125px;
+    top: -16.4062px;
+    left: 10.4219px;
+}
+
+.invalid-feedback.invalid-select strong {
+    top: 65px;
+}
+
+.select2-container {
+    border: 2px solid #B66CED !important;
+    border-radius: 5px;
+    /* padding-left: 15px; */
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%) !important;
+}
+
+.mt-4-ml-50 {
+    margin-top: 4px;
+    margin-left: 50px;
+}
+
+.mt-30-pr-21 {
+    margin-top: -30px;
+    padding-right: 21px;
+}
+
+.wh-28 {
+    width: 28px;
+    height: 28px;
+}
+
+.w100-h-mh150 {
+    width: 100px;
+    height: auto;
+    max-height: 150px;
+}
+
+.mt-55 {
+    margin-top: 55px;
+}
+
+.drawflow {
+    width: 100%;
+    overflow: auto
+}
+
+
+.match_wrapper .dd-handle.single_match_answer {
+    height: auto;
+    overflow: hidden;
+}
+
+.match_wrapper .dd-handle.single_match_answer .match_answer_inner {
+    gap: 20px;
+    justify-content: flex-start !important;
+}
+
+.match_wrapper .single_match .single_match_answer .match_answer_inner .thumb {
+    display: flex;
+    align-items: center;
+}
+
+.red-bg{
+    background:#dc3545
+}
+.loader_style {
+    margin-top: -37px !important;
+    position: relative;
+    padding-right: 35px !important;
+}
+ .loader2 {
+    z-index: 10000;
+    position: relative;
+    margin: 0;
+    margin-top: 0px;
+    right: 11px;
+    top: -4px;
+}
+
+.question-setup-options {
+    gap: 20px
+}
+
+.invalid-feedback.invalid-select strong {
+    top: 65px;
+}
+
+.select2-container {
+    border: 2px solid #B66CED !important;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0EAFF 100%) !important;
+}
+
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.new-loader {
+    z-index: 10000;
+    position: relative;
+    margin: 0;
+    margin-top: 0px;
+    right: 20px;
+    top: -36px;
+}
+
+.input-effect {
+    padding-top: 22px;
+}

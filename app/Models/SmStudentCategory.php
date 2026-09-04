@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use App\Scopes\SchoolScope;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class SmStudentCategory extends Model
+{
+    use HasFactory;
+
+    public function branch()
+    {
+        return $this->belongsTo('Modules\Branch\Entities\Branch', 'branch_id', 'id')->withDefault();
+    }
+
+    public function students()
+    {
+        return $this->hasMany(SmStudent::class, 'student_category_id', 'id');
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+        static::addGlobalScope(new SchoolScope);
+    }
+}
