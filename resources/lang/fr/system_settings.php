@@ -663,9 +663,9 @@ return [
 
     'expaire_date' => "Date d'expiration",
 
-    'infix_edu' => 'Infix Edu',
+    'infix_edu' => 'EduAI',
 
-    'infix_clasified' => 'Infix classifié',
+    'infix_clasified' => 'EduAI classifié',
 
     'purchase_list' => "Liste d'achats",
 

@@ -2,7 +2,7 @@
 
 return [
     'Welcome to' => 'স্বাগতম',
-    'InfixEdu' => 'ইনফিক্সএডু',
+    'EduAI' => 'ইনফিক্সএডু',
     'Students' => 'ছাত্ররা',
     'Leave' => 'ছুটি',
     'Staff' => 'কর্মচারী',

@@ -564,6 +564,6 @@ return [
     'Staff' => 'Staff',
     'Leave' => 'Leave',
     'Students' => 'Students',
-    'InfixEdu' => 'InfixEdu',
+    'EduAI' => 'EduAI',
     'Welcome to' => 'Welcome to',
 ];

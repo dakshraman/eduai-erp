@@ -2,7 +2,7 @@
 
 return [
     'Welcome to' => 'مرحبا بك',
-    'InfixEdu' => 'InfixEdu',
+    'EduAI' => 'EduAI',
     'Students' => 'الطلبة',
     'Leave' => 'الإجازات',
     'Staff' => 'الموظفين',
