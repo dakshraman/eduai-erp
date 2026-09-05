@@ -78,7 +78,7 @@
     <link rel="stylesheet" href="{{ assetPath('public/whatsapp-support/style.css') }}">
     <x-root-css />
     <script src="{{ assetPath('public/backEnd/') }}/vendors/js/jquery-3.2.1.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="{{ assetPath('public/backEnd/js/jquery.validate.min.js') }}"></script>
     <script>
         window._locale = '{{ app()->getLocale() }}';
         window._rtl = {{ userRtlLtl() == 1 ? 'true' : 'false' }};
