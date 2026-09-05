@@ -1,5 +1,28 @@
 <?php
 
+use App\Http\Middleware\AlumniMiddleware;
+use App\Http\Middleware\Authenticate;
+use App\Http\Middleware\CheckDashboardMiddleware;
+use App\Http\Middleware\CheckMaintenanceMode;
+use App\Http\Middleware\CheckUserMiddleware;
+use App\Http\Middleware\Cors;
+use App\Http\Middleware\CustomerMiddleware;
+use App\Http\Middleware\FeesDueCheckMiddleware;
+use App\Http\Middleware\ForceJsonResponse;
+use App\Http\Middleware\HttpsProtocol;
+use App\Http\Middleware\Localization;
+use App\Http\Middleware\ModulePermissionMiddleware;
+use App\Http\Middleware\ParentMiddleware;
+use App\Http\Middleware\ProductMiddleware;
+use App\Http\Middleware\SAMiddleware;
+use App\Http\Middleware\StudentMiddleware;
+use App\Http\Middleware\SubdomainMiddleware;
+use App\Http\Middleware\SubscriptionAccessUrl;
+use App\Http\Middleware\ThemeCheckMiddleware;
+use App\Http\Middleware\TrialMiddleware;
+use App\Http\Middleware\TwoFactorMiddleware;
+use App\Http\Middleware\UserRolePermission;
+use App\Http\Middleware\XSS;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -11,34 +34,35 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->prepend([
-            \App\Http\Middleware\CheckMaintenanceMode::class,
+            CheckMaintenanceMode::class,
         ]);
 
         $middleware->web(append: [
-            \App\Http\Middleware\Localization::class,
-            \App\Http\Middleware\HttpsProtocol::class,
+            Localization::class,
+            HttpsProtocol::class,
         ]);
 
         $middleware->alias([
-            'subdomain' => \App\Http\Middleware\SubdomainMiddleware::class,
-            '2fa' => \App\Http\Middleware\TwoFactorMiddleware::class,
-            'fees_due_check' => \App\Http\Middleware\FeesDueCheckMiddleware::class,
-            'module' => \App\Http\Middleware\ModulePermissionMiddleware::class,
-            'auth' => \App\Http\Middleware\Authenticate::class,
-            'CheckUserMiddleware' => \App\Http\Middleware\CheckUserMiddleware::class,
-            'CheckDashboardMiddleware' => \App\Http\Middleware\CheckDashboardMiddleware::class,
-            'StudentMiddleware' => \App\Http\Middleware\StudentMiddleware::class,
-            'AlumniMiddleware' => \App\Http\Middleware\AlumniMiddleware::class,
-            'ParentMiddleware' => \App\Http\Middleware\ParentMiddleware::class,
-            'CustomerMiddleware' => \App\Http\Middleware\CustomerMiddleware::class,
-            'PM' => \App\Http\Middleware\ProductMiddleware::class,
-            'cors' => \App\Http\Middleware\Cors::class,
-            'XSS' => \App\Http\Middleware\XSS::class,
-            'SAMiddleware' => \App\Http\Middleware\SAMiddleware::class,
-            'subscriptionAccessUrl' => \App\Http\Middleware\SubscriptionAccessUrl::class,
-            'userRolePermission' => \App\Http\Middleware\UserRolePermission::class,
-            'json.response' => \App\Http\Middleware\ForceJsonResponse::class,
-            'ThemeCheckMiddleware' => \App\Http\Middleware\ThemeCheckMiddleware::class,
+            'subdomain' => SubdomainMiddleware::class,
+            '2fa' => TwoFactorMiddleware::class,
+            'fees_due_check' => FeesDueCheckMiddleware::class,
+            'module' => ModulePermissionMiddleware::class,
+            'auth' => Authenticate::class,
+            'CheckUserMiddleware' => CheckUserMiddleware::class,
+            'CheckDashboardMiddleware' => CheckDashboardMiddleware::class,
+            'StudentMiddleware' => StudentMiddleware::class,
+            'AlumniMiddleware' => AlumniMiddleware::class,
+            'ParentMiddleware' => ParentMiddleware::class,
+            'CustomerMiddleware' => CustomerMiddleware::class,
+            'PM' => ProductMiddleware::class,
+            'cors' => Cors::class,
+            'XSS' => XSS::class,
+            'trial' => TrialMiddleware::class,
+            'SAMiddleware' => SAMiddleware::class,
+            'subscriptionAccessUrl' => SubscriptionAccessUrl::class,
+            'userRolePermission' => UserRolePermission::class,
+            'json.response' => ForceJsonResponse::class,
+            'ThemeCheckMiddleware' => ThemeCheckMiddleware::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {

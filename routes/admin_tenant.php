@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\FeesCollection\SmFeesCarryForwardController;
 use App\Http\Controllers\Admin\FrontSettings\ThemeManageController;
 use App\Http\Controllers\Admin\SystemSettings\PluginController;
+use App\Http\Controllers\ImportController;
 use App\Http\Controllers\ShiftController;
 use App\Http\Controllers\TeacherEvaluationController;
 use App\Http\Controllers\TeacherEvaluationReportController;
@@ -18,16 +19,16 @@ Route::get('checkForeignKey', 'HomeController@checkForeignKey')->name('checkFore
 // ADMIN
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/reg', function () { });
+Route::get('/reg', function () {});
 
-Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
+Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl', 'trial']], function () {
 
     // User Auth Routes
     Route::group(['middleware' => ['CheckDashboardMiddleware']], function () {
 
         Route::get('staff-download-timeline-doc/{file_name}', function ($file_name = null) {
             // return "Timeline";
-            $file = public_path() . '/uploads/student/timeline/' . $file_name;
+            $file = public_path().'/uploads/student/timeline/'.$file_name;
             // echo $file;
             // exit();
             if (file_exists($file)) {
@@ -39,7 +40,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
 
         Route::get('download-holiday-document/{file_name}', function ($file_name = null) {
             // return "Timeline";
-            $file = public_path() . '/uploads/holidays/' . $file_name;
+            $file = public_path().'/uploads/holidays/'.$file_name;
 
             if (file_exists($file)) {
                 return Response::download($file);
@@ -382,7 +383,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
 
         Route::get('bank-slip-view/{file_name}', function ($file_name = null) {
 
-            $file = public_path() . '/uploads/bankSlip/' . $file_name;
+            $file = public_path().'/uploads/bankSlip/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -537,7 +538,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::post('add-income-update', ['as' => 'add_income_update', 'uses' => 'Admin\Accounts\SmAddIncomeController@update'])->middleware('userRolePermission:add_income_edit');
         Route::post('add-income-delete', ['as' => 'add_income_delete', 'uses' => 'Admin\Accounts\SmAddIncomeController@delete'])->middleware('userRolePermission:add_income_delete');
         Route::get('download-income-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/add_income/' . $file_name;
+            $file = public_path().'/uploads/add_income/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -923,7 +924,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::put('add-expense/{id}', 'Admin\Accounts\SmAddExpenseController@update')->name('add-expense-update')->middleware('userRolePermission:add-expense-edit');
         Route::post('add-expense-delete', ['uses' => 'Admin\Accounts\SmAddExpenseController@delete'])->name('add-expense-delete')->middleware('userRolePermission:add-expense-delete');
         Route::get('download-expense-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/addExpense/' . $file_name;
+            $file = public_path().'/uploads/addExpense/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -960,7 +961,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::post('delete-complaint', 'Admin\AdminSection\SmComplaintController@destroy')->name('complaint_delete')->middleware('userRolePermission:complaint_delete');
 
         Route::get('download-complaint-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/complaint/' . $file_name;
+            $file = public_path().'/uploads/complaint/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -983,7 +984,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::post('postal-receive-delete', 'Admin\AdminSection\SmPostalReceiveController@destroy')->name('postal-receive_delete')->middleware('userRolePermission:postal-receive_delete');
 
         Route::get('postal-receive-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/postal/' . $file_name;
+            $file = public_path().'/uploads/postal/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -1001,7 +1002,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
 
         Route::get('postal-dispatch-document/{file_name}', function ($file_name = null) {
 
-            $file = public_path() . '/uploads/postal/' . $file_name;
+            $file = public_path().'/uploads/postal/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -1132,7 +1133,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::post('upload-document', ['as' => 'upload_document', 'uses' => 'SmStudentAdmissionController@uploadDocument']);
 
         Route::get('download-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/student/document/' . $file_name;
+            $file = public_path().'/uploads/student/document/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -1142,7 +1143,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::post('student-timeline-store', ['as' => 'student_timeline_store', 'uses' => 'SmStudentAdmissionController@studentTimelineStore']);
         // parent
         Route::get('parent-download-timeline-doc/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/student/timeline/' . $file_name;
+            $file = public_path().'/uploads/student/timeline/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -1340,35 +1341,35 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::get('upload-staff-documents/{id}', 'Admin\Hr\SmStaffController@uploadStaffDocuments');
         Route::post('save_upload_document', 'Admin\Hr\SmStaffController@saveUploadDocument')->name('save_upload_document');
         Route::get('download-staff-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/staff/document/' . $file_name;
+            $file = public_path().'/uploads/staff/document/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
         })->name('download-staff-document');
 
         Route::get('download-staff-joining-letter/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/staff_joining_letter/' . $file_name;
+            $file = public_path().'/uploads/staff_joining_letter/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
         })->name('download-staff-joining-letter');
 
         Route::get('download-resume/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/resume/' . $file_name;
+            $file = public_path().'/uploads/resume/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
         })->name('download-resume');
 
         Route::get('download-other-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/others_documents/' . $file_name;
+            $file = public_path().'/uploads/others_documents/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
         })->name('download-other-document');
 
         Route::get('download-staff-timeline-doc/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/staff/timeline/' . $file_name;
+            $file = public_path().'/uploads/staff/timeline/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -1441,7 +1442,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::post('save-homework-evaluation-data', ['as' => 'save-homework-evaluation-data', 'uses' => 'Admin\Homework\SmHomeworkController@saveHomeworkEvaluationData']);
         Route::get('evaluation-report', 'Admin\Homework\SmHomeworkController@EvaluationReport')->name('evaluation-report')->middleware('userRolePermission:evaluation-report');
         Route::get('evaluation-document-download/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/homework/' . $file_name;
+            $file = public_path().'/uploads/homework/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -1468,7 +1469,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
 
         Route::get('download-content-document/{file_name}', function ($file_name = null) {
 
-            $file = public_path() . '/uploads/upload_contents/' . $file_name;
+            $file = public_path().'/uploads/upload_contents/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -1549,14 +1550,12 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::post('all-issed-book', 'Admin\Library\SmBookController@searchIssuedBook')->name('search-issued-book');
         // Route::get('search-issued-book', 'p@allIssuedBook');
 
-
         // Library Subject routes
         Route::get('library-subject', ['as' => 'library_subject', 'uses' => 'Admin\Library\SmBookController@subjectList'])->middleware('userRolePermission:library_subject');
         Route::post('library-subject-store', ['as' => 'library_subject_store', 'uses' => 'Admin\Library\SmBookController@store'])->middleware('userRolePermission:library_subject_store');
         Route::get('library-subject-edit/{id}', ['as' => 'library_subject_edit', 'uses' => 'Admin\Library\SmBookController@edit'])->middleware('userRolePermission:library_subject_edit');
         Route::post('library-subject-update', ['as' => 'library_subject_update', 'uses' => 'Admin\Library\SmBookController@update'])->middleware('userRolePermission:library_subject_edit');
         Route::get('library-subject-delete/{id}', ['as' => 'library_subject_delete', 'uses' => 'Admin\Library\SmBookController@delete'])->middleware('userRolePermission:library_subject_delete');
-
 
         // Route::resource('item-category', 'Admin\Inventory\SmItemCategoryController');
         Route::get('item-category', 'Admin\Inventory\SmItemCategoryController@index')->name('item-category')->middleware('userRolePermission:item-category');
@@ -1710,7 +1709,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::get('download-files/{id}', 'Admin\SystemSettings\SmSystemSettingController@downloadFiles')->name('download-files')->middleware('userRolePermission:download-files');
         Route::get('restore-database/{id}', 'Admin\SystemSettings\SmSystemSettingController@restoreDatabase')->name('restore-database');
         Route::get('delete-database/{id}', 'Admin\SystemSettings\SmSystemSettingController@deleteDatabase')->name('delete_database')->middleware('userRolePermission:delete_database');
-        
+
         // Update System
         Route::get('about-system', 'Admin\SystemSettings\SmSystemSettingController@AboutSystem')->name('about-system')->middleware('userRolePermission:about-system');
 
@@ -2110,10 +2109,10 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
     Route::post('delete-student-record-permanently', 'Admin\StudentInfo\StudentMultiRecordController@studentRecordDeletePermanently')
         ->name('delete-student-record-permanently');
 
-    Route::get('import-staff', [App\Http\Controllers\ImportController::class, 'index'])->name('import-staff')
+    Route::get('import-staff', [ImportController::class, 'index'])->name('import-staff')
         ->middleware('userRolePermission:import-staff');
 
-    Route::post('staff-bulk-store', [App\Http\Controllers\ImportController::class, 'staffStore'])->name('staff-bulk-store');
+    Route::post('staff-bulk-store', [ImportController::class, 'staffStore'])->name('staff-bulk-store');
 
     Route::get('lang-file-export/{lang}', 'LanguageController@index')->name('lang-file-export');
     Route::post('file-export', 'LanguageController@export')->name('file-export');
@@ -2269,7 +2268,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
         Route::get('delete-event/{id}', 'deleteEvent')->name('delete-event')->middleware('userRolePermission:delete-event-view');
         Route::get('get-all-event-list', 'getAllEventList')->name('get-all-event-list');
         Route::get('download-event-document/{file_name}', function ($file_name = null) {
-            $file = public_path() . '/uploads/events/' . $file_name;
+            $file = public_path().'/uploads/events/'.$file_name;
             if (file_exists($file)) {
                 return Response::download($file);
             }
@@ -2362,7 +2361,7 @@ Route::group(['middleware' => ['XSS', 'subscriptionAccessUrl']], function () {
 
     Route::get('user-custom-menu/{slug?}', 'HomeController@userCustomMenu')->name('user-custom-menu.index');
     Route::get('/check-resetting', function () {
-        $isResetting = !Storage::exists('.app_resetting');
+        $isResetting = ! Storage::exists('.app_resetting');
 
         return response()->json(['is_resetting' => $isResetting]);
     })->name('checkResetting');

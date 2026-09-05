@@ -82,6 +82,9 @@ class DatabaseSeeder extends Seeder
         if (moduleStatusCheck('Saas')) {
             $this->call(SmSchoolSeeder::class);
         }
+
+        $this->call(SubscriptionPlanSeeder::class);
+
         $schools = SmSchool::query()->get();
 
         foreach ($schools as $school) {

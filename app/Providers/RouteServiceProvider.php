@@ -47,6 +47,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapConfigureRoutes();
         // $this->mapPageBuilderRoutes();
         $this->mapGraduateRoutes();
+        $this->mapSubscriptionRoutes();
     }
 
     protected function mapWebRoutes()
@@ -117,6 +118,13 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             ->namespace($this->apiNamespace)
             ->group(base_path('routes/v2api.php'));
+    }
+
+    protected function mapSubscriptionRoutes()
+    {
+        Route::middleware(['web'])
+            ->namespace($this->namespace)
+            ->group(base_path('routes/subscription.php'));
     }
 
     // configuration route
