@@ -74,7 +74,7 @@
     <link rel="stylesheet" href="{{ assetPath('public/backEnd/') }}/vendors/css/fullcalendar.min.css">
     <link rel="stylesheet" href="{{ assetPath('public/backEnd/') }}/vendors/css/fullcalendar.print.css">
 
-    <link rel="stylesheet" href="{{ assetPath('public/') }}/frontend/css/infix.css" />
+    <link rel="stylesheet" href="{{ assetPath('public/frontend/css/infix.css') }}" />
     <link rel="stylesheet" href="{{ assetPath('public/whatsapp-support/style.css') }}">
     <x-root-css />
     <script src="{{ assetPath('public/backEnd/') }}/vendors/js/jquery-3.2.1.min.js"></script>

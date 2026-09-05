@@ -1,7 +1,7 @@
 @extends('frontEnd.home.front_master')
 
 @push('css')
-    <link rel="stylesheet" href="{{assetPath('public/')}}/frontend/css/new_style.css"/>
+    <link rel="stylesheet" href="{{assetPath('public/frontend/css/new_style.css')}}"/>
 
 @endpush
 
