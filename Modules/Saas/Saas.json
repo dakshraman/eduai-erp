@@ -1,0 +1,9 @@
+{
+    "Saas": {
+        "migration": [],
+        "names": [],
+        "versions": ["1.0"],
+        "url": [],
+        "notes": ["SaaS subscription management module"]
+    }
+}

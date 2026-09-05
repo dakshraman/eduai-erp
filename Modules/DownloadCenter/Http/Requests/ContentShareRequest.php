@@ -1,0 +1,55 @@
+<?php
+
+namespace Modules\DownloadCenter\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class ContentShareRequest extends FormRequest
+{
+    /**
+     * Get the validation rules that apply to the request.
+     */
+    public function rules(): array
+    {
+        $rules = [
+            'title' => 'required',
+            'shareDate' => 'required',
+            'validUpto' => 'required|after:shareDate',
+            'content_ids' => 'required',
+            'role' => 'required_if:selectTab,==,G',
+            'role_id' => 'required_if:selectTab,==,I',
+            'class_id' => 'required_if:selectTab,==,C',
+        ];
+
+        if (moduleStatusCheck('Branch')) {
+            $rules += [
+                'branch_id' => 'required',
+            ];
+        }
+
+        return $rules;
+    }
+
+    public function messages()
+    {
+        $messages = [
+            'role' => 'Role is required when recipients are Group',
+            'role_id' => 'User is required when recipients are Individual',
+            'class_id' => 'Class is required when recipients are Class',
+        ];
+
+        if (moduleStatusCheck('Branch')) {
+            $messages['branch_id.required'] = __('branch::branch.branch_required');
+        }
+
+        return $messages;
+    }
+
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        return true;
+    }
+}
