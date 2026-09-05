@@ -50,7 +50,7 @@
 
             <div class="single-report-admit">
                 <div class="card-header">
-                    <h2 class="text-center text-uppercase" style="color: whitesmoke">Welcome to Infixedu </h2>
+                    <h2 class="text-center text-uppercase" style="color: whitesmoke">Welcome to EduAI </h2>
                 
                 </div>
             </div>

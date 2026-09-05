@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ assetPath($setting->favicon) }}" type="image/png" />
     <link rel="stylesheet" href="{{ assetPath('public/backEnd/vendors/font_awesome/css/all.min.css') }}" />
-    <title>{{ $setting->site_title ? $setting->site_title : 'Infix Edu ERP' }}</title>
+    <title>{{ $setting->site_title ? $setting->site_title : 'EduAI' }}</title>
     <meta name="_token" content="{!! csrf_token() !!}" />
     <style>
         .footer-list ul {
@@ -63,7 +63,7 @@
     <!-- main css -->
 
 
-    <link rel="stylesheet" href="{{ assetPath('public/frontend/') }}/css/{{ @activeStyle()->path_main_style }}" />
+    <link rel="stylesheet" href="{{ assetPath('public/frontend/') }}/css/{{ @activeStyle()->path_main_style }}.css" />
 
 
     @if (isset($ttl_rtl) && $ttl_rtl == 1)
@@ -96,7 +96,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}/home">
                     <img class="w-75"
                          src="{{ defaultLogo($setting->logo) }}"
-                         alt="Infix Logo" style="max-width: 150px;">
+                         alt="EduAI Logo" style="max-width: 150px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

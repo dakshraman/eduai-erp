@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="icon" href="{{asset('public/backEnd/')}}/img/favicon.png" type="image/png"/>
-    <title>Infix Edu ERP</title>
+    <title>EduAI</title>
     <meta name="_token" content="{!! csrf_token() !!}"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('public/backEnd/')}}/vendors/css/jquery-ui.css"/>

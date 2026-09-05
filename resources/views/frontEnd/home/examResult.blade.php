@@ -1,4 +1,4 @@
-@php $page_title="All about Infix School management system; School management software"; @endphp
+@php $page_title="All about EduAI School management system; School management software"; @endphp
 @extends('frontEnd.home.front_master')
 @push('css')
     <link rel="stylesheet" href="{{ assetPath('public/') }}/frontend/css/new_style.css"/>
@@ -586,10 +586,10 @@
                                                             <div class="col-lg-8 text-center">
                                                                 <h3 class="text-white"
                                                                     style="font-size: 30px;margin-bottom: 0px;">
-                                                                    {{ isset(generalSetting()->school_name) ? generalSetting()->school_name : 'Infix School Management ERP' }}
+                                                                    {{ isset(generalSetting()->school_name) ? generalSetting()->school_name : 'EduAI' }}
                                                                 </h3>
                                                                 <p class="text-white mb-0" style="font-size: 16px;">
-                                                                    {{ isset(generalSetting()->address) ? generalSetting()->address : 'Infix School Address' }}
+                                                                    {{ isset(generalSetting()->address) ? generalSetting()->address : 'School Address' }}
                                                                 </p>
                                                                 <p class="text-white mb-0" style="font-size: 16px;">
                                                                     @lang('common.email'): <span

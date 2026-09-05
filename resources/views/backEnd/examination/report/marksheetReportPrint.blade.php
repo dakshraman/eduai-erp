@@ -473,8 +473,8 @@
                                     </h2>
                                 </div>
                                 <div class="company_info">
-                                    <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}}</h3>
-                                    <h5>{{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}}</h5>
+                                    <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}}</h3>
+                                    <h5>{{isset(generalSetting()->address)?generalSetting()->address:'School Address'}}</h5>
                                     <h5>@lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'hello@aorasoft.com'}}, @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+96897002784 '}}</h5>
                                 </div>
                             </div>

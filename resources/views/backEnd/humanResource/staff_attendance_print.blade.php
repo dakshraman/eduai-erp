@@ -82,10 +82,10 @@ if (is_chrome) {
                 </td>
                 <td>
                     <h3 style="font-size:22px !important" class="text-white">
-                        {{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}}
+                        {{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}}
                     </h3>
                     <p style="font-size:18px !important" class="text-white mb-0">
-                        {{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}} </p>
+                        {{isset(generalSetting()->address)?generalSetting()->address:'School Address'}} </p>
                 </td>
                 <td style="text-aligh:center">
                     <p style="font-size:14px !important; border-bottom:1px solid gray" align="left" class="text-white">

@@ -438,10 +438,10 @@
                                         </div>
                                         <div class=" col-lg-4 text-left text-lg-right mt-30-md">
                                             <h3 class="text-white">
-                                                {{ isset(generalSetting()->school_name) ? generalSetting()->school_name : 'Infix School Management ERP' }}
+                                                {{ isset(generalSetting()->school_name) ? generalSetting()->school_name : 'EduAI' }}
                                             </h3>
                                             <p class="text-white mb-0">
-                                                {{ isset(generalSetting()->address) ? generalSetting()->address : 'Infix School Adress' }}
+                                                {{ isset(generalSetting()->address) ? generalSetting()->address : 'School Address' }}
                                             </p>
                                             <p class="text-white mb-0">
                                                 @lang('common.email'):

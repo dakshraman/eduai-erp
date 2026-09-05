@@ -231,10 +231,10 @@
 </head>
 @php 
     $generalSetting = generalSetting();
-    $school_name = $generalSetting->school_name ?? 'Infix School Management ERP';
+    $school_name = $generalSetting->school_name ?? 'EduAI';
     $site_title = $generalSetting->site_title ?? '';
     $school_code = $generalSetting->school_code ?? '';
-    $address = $generalSetting->address ?? 'Infix School Address';
+    $address = $generalSetting->address ?? 'School Address';
     $phone = $generalSetting->phone ?? '';
     $logo = $generalSetting->logo ?? 'public/backEnd/img/logo.png';
 @endphp
@@ -266,8 +266,8 @@
                             </tr>
                             <tr>
                                 <td class="company_info logo_img" style="text-align: center; padding-left: 0; border: none;">
-                                    <h3 style="margin: 0 0 5px 0;">{{$school_name ?? 'Infix School Management ERP'}}</h3>
-                                    <h5 style="margin: 0; font-weight: 400;">{!! nl2br(e($address ?? 'Infix School Address')) !!}</h5>
+                                    <h3 style="margin: 0 0 5px 0;">{{$school_name ?? 'EduAI'}}</h3>
+                                    <h5 style="margin: 0; font-weight: 400;">{!! nl2br(e($address ?? 'School Address')) !!}</h5>
                                 </td>
                             </tr>
                         </tbody>

@@ -59,10 +59,10 @@
                 </td>
                 <td style="text-aligh:center">
                     <h3 style="font-size:20px !important; margin: 5px 0 0 0" class="text-white">
-                        {{ isset(generalSetting()->school_name) ? generalSetting()->school_name : 'Infix School Management ERP' }}
+                        {{ isset(generalSetting()->school_name) ? generalSetting()->school_name : 'EduAI' }}
                     </h3>
                     <p style="font-size:16px !important;margin:0px" class="text-white mb-0">
-                        {{ isset(generalSetting()->address) ? generalSetting()->address : 'Infix School Address' }}
+                        {{ isset(generalSetting()->address) ? generalSetting()->address : 'School Address' }}
                     </p>
                 </td>
             </tr>

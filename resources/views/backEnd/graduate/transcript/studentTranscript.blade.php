@@ -317,8 +317,8 @@
                                                     <img src="{{asset(generalSetting()->logo)}}" alt="{{generalSetting()->school_name }}">
                                                 </div>
                                                 <div class="">
-                                                    <h4>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}}</h4>
-                                                    <h5>{{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}}</h5>
+                                                    <h4>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}}</h4>
+                                                    <h5>{{isset(generalSetting()->address)?generalSetting()->address:'School Address'}}</h5>
                                                     <h5>{{isset(generalSetting()->email)?generalSetting()->email:'hello@aorasoft.com'}}</h5>
                                                     <h5>{{isset(generalSetting()->phone)?generalSetting()->phone:'+96897002784'}}</h5>
                                                 </div>

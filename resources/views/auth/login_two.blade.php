@@ -53,7 +53,7 @@ $ttl_rtl = $setting->ttl_rtl;
     @if(isset ($ttl_rtl ) && $ttl_rtl ==1)
         <link rel="stylesheet" href="{{assetPath('public/backEnd/')}}/css/rtl/style.css"/>
     @else
-        <link rel="stylesheet" href="{{assetPath('public/backEnd/')}}/css/{{@activeStyle()->path_main_style}}"/>
+        <link rel="stylesheet" href="{{assetPath('public/backEnd/')}}/css/{{@activeStyle()->path_main_style}}.css"/>
     @endif
     <link rel="stylesheet" href="{{assetPath('public/backEnd/')}}/vendors/css/toastr.min.css"/>
     <style>

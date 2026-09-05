@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="{{ url('/') }}/public/backEnd/vendors/js/select2/select2.css"/>
 
     <link rel="stylesheet" href="{{ assetPath('public/backEnd/') }}/vendors/css/toastr.min.css"/>
-    <link rel="stylesheet" href="{{ assetPath('public/frontend/') }}/css/{{ activeStyle()->path_main_style }}"/>
+    <link rel="stylesheet" href="{{ assetPath('public/frontend/') }}/css/{{ activeStyle()->path_main_style }}.css"/>
     <x-root-css/>
     @if (isset($ttl_rtl) && $ttl_rtl==1)
         <link rel="stylesheet" href="{{ url('public/backEnd/') }}/assets/vendors/vendors_static_style.css"/>

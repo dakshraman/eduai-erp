@@ -9,7 +9,7 @@ return [
         [
             'id' => 'footer-copy-right-text',
             'type' => 'text',
-            'value' => '© 2026 InfixEdu. All rights reserved. Made By CodeThemes.',
+            'value' => '© 2026 EduAIEdu. All rights reserved. Made By CodeThemes.',
             'class' => '',
             'label_title' => __('edulia.footer_copy_right_text'),
             'label_desc' => '',

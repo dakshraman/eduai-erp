@@ -264,8 +264,8 @@
                                                                  alt="{{ generalSetting()->school_name }}">
                                                         </div>
                                                         <div class="col-lg-6 ml-30">
-                                                            <h3 class="text-white"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}} </h3>
-                                                            <p class="text-white mb-0"> {{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}} </p>
+                                                            <h3 class="text-white"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}} </h3>
+                                                            <p class="text-white mb-0"> {{isset(generalSetting()->address)?generalSetting()->address:'School Address'}} </p>
                                                             <p class="text-white mb-0">
                                                                 @lang('common.email')
                                                                 : {{isset($email)?$email:'hello@aorasoft.com'}} ,

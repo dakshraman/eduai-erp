@@ -672,9 +672,9 @@
                                                     </div>
                                                     <div class="col-xl-8  col-sm-8 text-center">
                                                         <h3 class="text-white"
-                                                            style="font-size: 30px;margin-bottom: 0px;"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}} </h3>
+                                                            style="font-size: 30px;margin-bottom: 0px;"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}} </h3>
                                                         <p class="text-white mb-0"
-                                                           style="font-size: 16px;">  {{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}} </p>
+                                                           style="font-size: 16px;">  {{isset(generalSetting()->address)?generalSetting()->address:'School Address'}} </p>
                                                         <p class="text-white mb-0" style="font-size: 16px;">
                                                             @lang('common.email'): <span
                                                                     class="text-lowercase">{{isset(generalSetting()->email)?generalSetting()->email:'hello@aorasoft.com'}}</span>,

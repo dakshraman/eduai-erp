@@ -146,9 +146,9 @@
                 <img class="logo-img" src="{{ url('/')}}/{{generalSetting()->logo }}" alt="">
             </th>
             <th colspan="2">
-                <h3 class="text-white"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}} </h3>
+                <h3 class="text-white"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}} </h3>
                 <p class="text-white mb-0"
-                   style="padding-right:10px !important;"> {{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}} </p>
+                   style="padding-right:10px !important;"> {{isset(generalSetting()->address)?generalSetting()->address:'School Address'}} </p>
             </th>
 
         </tr>

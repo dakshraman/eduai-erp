@@ -339,8 +339,8 @@
                                     <div class="thumb_logo">
                                         <img  src="{{assetPath(generalSetting()->logo)}}" alt="{{generalSetting()->school_name}}"></div>
                                     <div class="company_info">
-                                        <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}} </h3>
-                                        <p>{{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}}</p>
+                                        <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}} </h3>
+                                        <p>{{isset(generalSetting()->address)?generalSetting()->address:'School Address'}}</p>
                                         <p>@lang('common.email'):  {{isset(generalSetting()->email)?generalSetting()->email:'hello@aorasoft.com'}},   @lang('common.phone'):  {{isset(generalSetting()->phone)?generalSetting()->phone:'+96897002784'}} </p>
                                     </div>
                                 </div>

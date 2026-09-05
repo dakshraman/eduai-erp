@@ -302,10 +302,10 @@ $setting_info=generalSetting();
                   </div>
                   <div class="school_name">
                   <h2>
-                    {{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}} 
+                    {{isset(generalSetting()->school_name)?generalSetting()->school_name:'EduAI'}} 
                   </h2>
                   <p>
-                    {{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}} 
+                    {{isset(generalSetting()->address)?generalSetting()->address:'School Address'}} 
                   </p>       
                 </div>
                 </div>

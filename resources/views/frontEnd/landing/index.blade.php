@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title> Infix school management software & School management system </title>
-    <meta name="description" content="Infix is 100+ unique feature enable school management software system. It can manage all type of school, academy and any educational institution. ">
+    <title> EduAI school management software & School management system </title>
+    <meta name="description" content="EduAI is 100+ unique feature enable school management software system. It can manage all type of school, academy and any educational institution. ">
     <meta name="keywords" content="School Management Software, School Management System, School ERP software, school ERP system, Academy management software">
     <meta name="ahrefs-site-verification" content="578d1aa1e01051e3ac46df77d602eb6846f676a092e33c9befa5ce2395403bd2">
     <meta name="google-site-verification" content="oXBw6wz6Ie5UTDB4h1JRUXHDZE2n-uGO2lm1HVYcA-c" />
@@ -39,7 +39,7 @@
           "datePublished" : "2019-05-28",
           "publisher" : {
             "@type" : "School Management ERP software",
-            "name" : "Infix"
+            "name" : "EduAI"
           },
           "applicationCategory" : "ERP Software",
           "downloadUrl" : "http://infixedu.com",
@@ -64,11 +64,11 @@
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@InfixEdu"/>
-    <meta name="twitter:creator" content="@InfixEdu"/>
+    <meta name="twitter:site" content="@EduAI"/>
+    <meta name="twitter:creator" content="@EduAI"/>
     <meta name="twitter:url" content="//infix.com/"/>
     <meta name="twitter:title" The Ultimate Education Management System For School,  Institute & Academy"/>
-    <meta name="twitter:description" content="Infix is a well known School management system and its ERP based Software. So try the free demo today!. Cause Infix offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
+    <meta name="twitter:description" content="EduAI is a well known School management system and its ERP based Software. So try the free demo today!. Cause EduAI offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
     <meta property="og:image" content="http://infixedu.com/public/landing/img/dashboard_preview.png"/>
 
 
@@ -76,10 +76,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="//infixedu.com/"/>
     <meta property="og:image" content="//infixedu.com/public/landing/img/dashboard_preview.png"/>
-    <meta property="og:title" content="School Management ERP Software & School Management System - Infix"/>
+    <meta property="og:title" content="School Management ERP Software & School Management System - EduAI"/>
 
-    <meta property="og:description" content="Infix is a well known School management system and its ERP based Software. So try the free demo today!. Cause Infix offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
-    <meta property="og:site_name" content="Infix" />
+    <meta property="og:description" content="EduAI is a well known School management system and its ERP based Software. So try the free demo today!. Cause EduAI offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
+    <meta property="og:site_name" content="EduAI" />
 
     <link rel="canonical" href="http://infixedu.com" hreflang="en-us" />
 
@@ -111,7 +111,7 @@
                             savior with this INFIX and Give your valued time to your institute that will
                             increase next generation productivity for our society.</p>
                         @if(!moduleStatusCheck('Saas'))
-                            <a  class="btn_1" target="_blank" href="mailto:hello@aorasoft.com?subject=Request for InfixEdu SaaS Application Demo!&body=Could you please arrange a demo for the InfixEdu SaaS application at your earliest convenience?"> <i class="ti-email"></i> For Saas Demo</a>
+                            <a  class="btn_1" target="_blank" href="mailto:hello@aorasoft.com?subject=Request for EduAI SaaS Application Demo!&body=Could you please arrange a demo for the EduAI SaaS application at your earliest convenience?"> <i class="ti-email"></i> For Saas Demo</a>
                         @endif
                         <a href="{{url('/home')}}" class="btn_2" target="_blank"> <i class="ti-package"></i> Try Live Demo</a>
                     </div>
@@ -495,7 +495,7 @@
                 <div class="section_tittle text-center">
                     <h5>AMazing Features</h5>
                     <h2>More Features Has INFIX</h2>
-                    <p>it's vast! Infix has more additional feature that will expect in a complete solution.</p>
+                    <p>it's vast! EduAI has more additional feature that will expect in a complete solution.</p>
                 </div>
             </div>
         </div>
@@ -713,7 +713,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="copyright_text">
-                    <p> <img src="{{assetPath('public/landing/img/copyright.svg')}}" alt="#"> 2019-2020 InfixEdu - Ultimate Education ERP. All Rights
+                    <p> <img src="{{assetPath('public/landing/img/copyright.svg')}}" alt="#"> 2019-2020 EduAI - Ultimate Education ERP. All Rights
                         Reserved to <a href="#">Codetheme </a> .</p>
                 </div>
             </div>
